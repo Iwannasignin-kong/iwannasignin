@@ -1456,8 +1456,51 @@ https://iwannasignin-kong.github.io/iwannasignin/
 主人记得看呀~ 💕
 """
 
-        # Use parent class method to send
-        return super().send_hotspot_summary(title, items, summary, source_count, error_count)
+        # Send catgirl message directly
+        payload = {
+            "msg_type": "text",
+            "content": {
+                "text": message
+            }
+        }
+
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                if HAS_REQUESTS:
+                    response = requests.post(
+                        self.webhook_url,
+                        json=payload,
+                        headers={"Content-Type": "application/json"},
+                        timeout=10
+                    )
+                    result = response.json()
+                    if result.get("StatusCode") == 0 or result.get("code") == 0:
+                        return True
+                    else:
+                        print(f"Feishu API error: {result}")
+                else:
+                    import urllib.request
+                    data = json.dumps(payload).encode('utf-8')
+                    req = urllib.request.Request(
+                        self.webhook_url,
+                        data=data,
+                        headers={'Content-Type': 'application/json'}
+                    )
+                    with urllib.request.urlopen(req, timeout=10) as resp:
+                        result = json.loads(resp.read().decode('utf-8'))
+                        if result.get("StatusCode") == 0 or result.get("code") == 0:
+                            return True
+
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    time.sleep(wait_time)
+                else:
+                    print(f"Feishu notification failed: {e}")
+                    return False
+
+        return False
 
 
 # ==================== DingTalk Notifier ====================
