@@ -1372,7 +1372,7 @@ class FeishuNotifier:
 📌 查看完整 HTML 报告：
 https://iwannasignin-kong.github.io/iwannasignin/
 
-数据源: {source_count} 个 | 异常: {error_count} 个
+数据来源: {source_count} 个平台
 """
 
         payload = {
@@ -1958,7 +1958,6 @@ def render_page(
       <div class="summary"><strong>今日总结：</strong>{html.escape(summary_text)}</div>
       <div class="stats">
         <span class="pill">热点条目 {len(items)}</span>
-        <span class="pill">信源异常 {len(errors)}</span>
       </div>
     </header>
     <section class="grid">{"".join(cards)}</section>
