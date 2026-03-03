@@ -43,7 +43,8 @@ jobs:
             --domain all \
             --top 50 \
             --no-fallback \
-            --feishu
+            --feishu \
+            --cat
 
       # 5. 上传生成的 HTML 文件
       - name: 上传报告文件
