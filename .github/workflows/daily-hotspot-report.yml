@@ -1,4 +1,4 @@
-name: 每日热点日报推送
+name: 每日热点日报推送（纯 API 版本）
 
 # 触发条件
 on:
@@ -9,16 +9,12 @@ on:
   # 支持手动触发
   workflow_dispatch:
 
-# 环境变量
-env:
-  PYTHON_VERSION: "3.10"
-
 jobs:
   generate-and-push:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
-    # 设置超时时间（防止任务卡住）
-    timeout-minutes: 30
+    # 设置超时时间
+    timeout-minutes: 15
 
     steps:
       # 1. 检出代码
@@ -26,30 +22,21 @@ jobs:
         uses: actions/checkout@v4
 
       # 2. 设置 Python 环境
-      - name: 设置 Python ${{ env.PYTHON_VERSION }}
+      - name: 设置 Python 3.10
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version: "3.10"
 
-      # 3. 安装 Python 依赖
-      - name: 安装 Python 依赖
+      # 3. 安装 Python 依赖（只需要 requests）
+      - name: 安装依赖
         run: |
           pip install --upgrade pip
-          pip install requests playwright
+          pip install requests
 
-      # 4. 安装 Playwright 浏览器（使用官方 action）
-      - name: 安装 Playwright 浏览器
-        uses: playwright/setup-playwright@v1
-        with:
-          browsers: chromium
-          install-deps: true
-
-      # 5. 生成热点日报并发送推送
+      # 4. 生成热点日报并发送推送（只使用 API 数据源）
       - name: 生成并推送热点日报
         env:
-          # 从 GitHub Secrets 中读取 Webhook URL
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
         run: |
           cd hotspot-radar-manual
           python scripts/generate_hotspots.py \
@@ -58,19 +45,11 @@ jobs:
             --no-fallback \
             --feishu
 
-      # 6. 上传生成的 HTML 文件（可选）
+      # 5. 上传生成的 HTML 文件
       - name: 上传报告文件
         uses: actions/upload-artifact@v4
-        if: always() # 即使前面的步骤失败也执行
+        if: always()
         with:
           name: hotspot-report-${{ github.run_number }}
-          path: |
-            hotspot-radar-manual/output/*.html
-          retention-days: 30 # 保留 30 天
-
-      # 7. 发送失败通知（可选）
-      - name: 发送失败通知
-        if: failure()
-        run: |
-          echo "热点日报生成失败！请检查日志。"
-          # 这里可以添加额外的失败通知逻辑
+          path: hotspot-radar-manual/output/*.html
+          retention-days: 30
