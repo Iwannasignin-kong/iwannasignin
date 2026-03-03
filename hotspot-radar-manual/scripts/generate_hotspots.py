@@ -1421,6 +1421,45 @@ https://iwannasignin-kong.github.io/iwannasignin/
         return False
 
 
+class FeishuCatNotifier(FeishuNotifier):
+    """Feishu webhook notification sender with cute catgirl style (猫娘版) 喵~"""
+
+    def send_hotspot_summary(
+        self,
+        title: str,
+        items: List[Dict[str, Any]],
+        summary: str,
+        source_count: int,
+        error_count: int
+    ) -> bool:
+        """Send hotspot summary as cute catgirl message 喵~"""
+        # Build top 5 items with catgirl style
+        top_items = items[:5]
+        items_text = "\n".join([
+            f"喵~ 第{i+1}条：{it['title']}\n   热度：{it['importance']}/5 {it.get('extra', {}).get('rank_reason', '超火哒')} 喵\n   {it['link']}"
+            for i, it in enumerate(top_items)
+        ])
+
+        message = f"""✨ **{title}** ✨
+{dt.datetime.now().strftime('%Y-%m-%d')} 喵呜~
+
+📊 {summary} 呢~
+
+🔥 Top 5 超热事件喵：
+{items_text}
+
+📌 查看完整 HTML 报告：
+https://iwannasignin-kong.github.io/iwannasignin/
+
+数据来源：{source_count} 个平台 喵~
+
+主人记得看呀~ 💕
+"""
+
+        # Use parent class method to send
+        return super().send_hotspot_summary(title, items, summary, source_count, error_count)
+
+
 # ==================== DingTalk Notifier ====================
 
 class DingTalkNotifier:
@@ -1997,6 +2036,11 @@ def main():
         help="Send notification to Feishu/Lark (requires FEISHU_WEBHOOK_URL env var)"
     )
     parser.add_argument(
+        "--cat",
+        action="store_true",
+        help="Use cute catgirl style for Feishu message (喵~)"
+    )
+    parser.add_argument(
         "--clear-cookies",
         action="store_true",
         help="Clear all saved cookies before fetching (force refresh)"
@@ -2064,7 +2108,13 @@ def main():
             high_cnt = sum(1 for it in items if float(it.get("importance", 0)) >= 4.0)
             summary = f"{len(items)} 条热点，{high_cnt} 条高优先级"
 
-            notifier = FeishuNotifier()
+            # Choose notifier style based on --cat flag
+            if args.cat:
+                notifier = FeishuCatNotifier()
+                print("使用猫娘风格推送 喵~")
+            else:
+                notifier = FeishuNotifier()
+
             success = notifier.send_hotspot_summary(
                 title=domain_cfg["title"],
                 items=items,
@@ -2075,6 +2125,8 @@ def main():
 
             if success:
                 print("飞书通知已发送")
+                if args.cat:
+                    print("喵~ 主人记得查收哦！")
             else:
                 print("飞书通知发送失败（已记录错误）")
         except Exception as e:
