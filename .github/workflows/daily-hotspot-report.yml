@@ -15,7 +15,7 @@ env:
 
 jobs:
   generate-and-push:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     # 设置超时时间（防止任务卡住）
     timeout-minutes: 30
