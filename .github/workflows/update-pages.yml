@@ -1,0 +1,57 @@
+name: 更新 HTML 报告到 GitHub Pages
+
+on:
+  # 每次主分支有推送时运行
+  push:
+    branches: [ main ]
+
+  # 手动触发
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 生成 HTML 报告
+        run: |
+          cd hotspot-radar-manual
+          python scripts/generate_hotspots.py --domain all --top 50 --no-fallback
+
+      - name: 复制到 Pages 目录
+        run: |
+          mkdir -p docs
+          cp hotspot-radar-manual/output/hotspots-all-latest.html docs/index.html
+
+      - name: 上传到 GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
