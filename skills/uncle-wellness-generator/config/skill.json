@@ -1,0 +1,26 @@
+{
+  "name": "redink-studio",
+  "description": "小红书内容创作工作室 - 支持参考图分析、Prompt提取、二次创作，完整实现「捕捉网感图文→分析风格→优化Prompt→文生图重绘」工作流",
+  "author": "Uncle-L",
+  "version": "2.0",
+  "parameters": {
+    "mode": {
+      "type": "string",
+      "description": "工作模式: analyze(分析参考图)|create(从标题创作)|remix(二次创作)",
+      "default": "create"
+    },
+    "title": {
+      "type": "string",
+      "description": "笔记标题（create模式必需）"
+    },
+    "image": {
+      "type": "string",
+      "description": "参考图路径（analyze/remix模式必需）"
+    },
+    "count": {
+      "type": "integer",
+      "description": "生成图片数量",
+      "default": 3
+    }
+  }
+}

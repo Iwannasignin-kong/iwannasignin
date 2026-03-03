@@ -1,0 +1,167 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║           HEALTH & WELLNESS DIET THERAPY COMIC - STRUCTURE                    ║
+║                                                                                ║
+║  Style: ohmsha (Doraemon + Visual Metaphors) | Art: Manga | Layout: Webtoon   ║
+║  Ratio: 3:4 Portrait | Language: Chinese | Characters: Nobita, Doraemon, Shizuka ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PAGE 1: 大雄的早晨困扰 (Nobita's Morning Trouble)                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  [P1] Nobita wakes up with dizziness spiral → Establishing problem           │
+│  [P2] Mirror scene → Pale, worried, blood pressure concerns                  │
+│  [P3] Doraemon bursts from drawer → Dynamic entrance!                        │
+│  [P4] Lightbulb moment → Doraemon has a solution                             │
+│  [P5] 4D pocket close-up → Magical gadget retrieval                          │
+│  [P6] Gadget reveal → "Diet Therapy Search Compass!"                         │
+│                                                                              │
+│  Visual Metaphors: Dizziness spirals, lightbulb idea, magical pocket, glow   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PAGE 2: 神奇的食疗小程序 (The Amazing Diet Therapy Mini-Program)             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  [P1] Doraemon shows app → Nobita amazed, sparkles in eyes                  │
+│  [P2] UI close-up → Clean orange-themed search interface                     │
+│  [P3] Typing symptoms → "dizziness, blood pressure" + scan effect           │
+│  [P4] Results found → Gastrodia Fish Head Soup recipe card!                  │
+│  [P5] Celebration → Both characters excited, jump pose!                      │
+│  [P6] Video tutorial → Cute chef showing steps 1-2-3                         │
+│                                                                              │
+│  Visual Metaphors: Sparkling eyes, scanning beam, discovery glow, chef guide │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PAGE 3: 跟着视频学做汤 (Learning to Cook with Video)                         │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  [P1] Kitchen prep → Nobita in apron, ingredients ready                      │
+│  [P2] Washing fish → Water splash effects, step 1                            │
+│  [P3] Adding ingredients → Golden medicinal essence spreading                │
+│  [P4] Simmering → Time passage (1h → 2h), aroma spirals                     │
+│  [P5] Soup complete → Beautiful presentation, achievement moment!            │
+│  [P6] Drinking soup → Orange healing warmth flowing through body             │
+│                                                                              │
+│  Visual Metaphors: Golden essence, time lapse, healing warmth, achievement   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PAGE 4: 分享健康 (Sharing Health)                                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  [P1] Healthy Nobita → Walking with Shizuka, rosy cheeks, energetic         │
+│  [P2] Sharing discovery → Shows app to Shizuka, excited                      │
+│  [P3] More features → Constitution, seasonal, family sharing                 │
+│  [P4] Share action → "Share to family group" selected                        │
+│  [P5] Family gathering → All three enjoying soups, warm atmosphere           │
+│  [P6] Triumphant ending → Thumbs up, happy conclusion                        │
+│                                                                              │
+│  Visual Metaphors: Health glow, sharing connection, family warmth, victory   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           STORY ARC SUMMARY                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  ACT 1 (Pages 1-2): PROBLEM & SOLUTION                                      ║
+║  → Problem: Dizziness, don't know what to eat                               ║
+║  → Solution: Doraemon's gadget, the diet therapy mini-program                ║
+║  → Discovery: Finding the right recipe                                      ║
+║                                                                              ║
+║  ACT 2 (Pages 3-4): ACTION & RESOLUTION                                     ║
+║  → Learning: Following video tutorial to cook                                ║
+║  → Healing: Soup brings recovery                                            ║
+║  → Sharing: Spreading health to family and friends                           ║
+║                                                                              ║
+║  THEMES: Traditional Chinese medicine, modern technology, family care,       ║
+║          health through diet, sharing knowledge, intergenerational wellness  ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         CHARACTER DEVELOPMENT                                ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  NOBITA: Confused → Learning → Healthy → Sharing → Empowered                 ║
+║  DORAEMON: Helpful mentor → Problem solver → Proud friend                    ║
+║  SHIZUKA: Caring friend → Interested learner → Health beneficiary            ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         VISUAL EFFECTS INVENTORY                             ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  EMOTIONS:     Spiral eyes, sparkles, sweat drops, question marks            ║
+║  ACTION:       Speed lines, burst effects, motion blur                       ║
+║  MAGIC:        Golden glow, sparkles, dimensional swirl                      ║
+║  HEALING:      Orange warmth flow, rosy cheeks, health aura                  ║
+║  TECH:         Screen glow, scanning beams, digital sparkles                 ║
+║  ATMOSPHERE:   Warm halos, cozy lighting, golden tones                       ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         KEY VISUAL METAPHORS                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  1. Dizziness → Spinning concentric circles                                  ║
+║  2. Idea → Lightbulb with glow                                               ║
+║  3. Gadget → Magical pocket with dimensional space                           ║
+║  4. App → Clean UI with warm inviting glow                                   ║
+║  5. Search → Scanning magnifying glass with light beams                      ║
+║  6. Discovery → Sparkling star eyes                                          ║
+║  7. Medicinal essence → Golden light/particles                               ║
+║  8. Time passage → Clock showing hour transition                             ║
+║  9. Healing → Orange warmth flowing through body                              ║
+║  10. Health recovery → Rosy cheeks, bright eyes, energy aura                 ║
+║  11. Sharing → Connection lines, warm interaction                            ║
+║  12. Success → Thumbs up, triumphant pose, halo effect                        ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           OUTPUT FILES                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ✓ storyboard.md              - Original storyboard (4 pages, 24 panels)      │
+│  ✓ prompts/page-N/panel-M.md  - 24 detailed panel descriptions               │
+│  ✓ comic_prompts.json         - All prompts in JSON for batch generation     │
+│  ✓ generate-comic.sh          - Workflow organization script                 │
+│  ✓ GENERATION_REPORT.md       - This comprehensive report                    │
+│  ✓ comic_structure.txt        - This structural overview                     │
+│                                                                              │
+│  ⏳ images/page-N-panel-M.png  - Generated images (to be created)            │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         GENERATION CHECKLIST                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ✓ Storyboard read and understood                                            │
+│  ✓ 24 panel prompts created (markdown)                                       │
+│  ✓ JSON prompts file created for batch generation                            │
+│  ✓ All prompts follow ohmsha rules (visual metaphors, action over talk)      │
+│  ✓ Doraemon character descriptions included                                   │
+│  ✓ Manga/anime style specified                                                │
+│  ✓ 3:4 portrait aspect ratio specified                                        │
+│  ✓ Chinese language for dialogue                                             │
+│  ✓ Visual effects detailed (sparkles, speed lines, etc.)                     │
+│  ✓ Story arc complete (problem → solution → resolution)                      │
+│  ✓ Character development tracked                                             │
+│  ⏳ Image generation (pending)                                               │
+│  ⏳ PDF compilation (optional)                                               │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+                            ┌─────────────────────┐
+                            │   READY FOR IMAGE   │
+                            │   GENERATION! ✓     │
+                            └─────────────────────┘
+
+All 24 prompts are optimized and ready for manga-style image generation.
+Use comic_prompts.json with your preferred image generation service.
+Recommended: dashscope z-image-turbo with manga style, 3:4 ratio.

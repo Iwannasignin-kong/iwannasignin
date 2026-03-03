@@ -1,0 +1,5 @@
+{
+  "gemini_api_key": "your-gemini-api-key-here",
+  "volcano_api_key": "your-volcano-engine-api-key-here",
+  "volcano_endpoint": "your-volcano-model-endpoint-here"
+}

@@ -1,0 +1,17 @@
+Social connection scene showing mobile health app sharing:
+
+Main element: Smartphone screen in center displaying a health tip card with food illustration, heart icon, and share button
+
+Action: Animated lines/arrows flowing from phone to three smaller screens arranged in semi-circle above, representing social network sharing
+
+Surrounding elements:
+- Speech bubbles with emoji icons (smiling face, heart, thumbs up)
+- Connecting dots and lines forming a network pattern
+- Warm, friendly color gradients radiating outward
+
+Mood: Caring, connected, community-focused. Soft rounded shapes, gentle curves, no sharp angles. Color palette: Coral pink, soft blue, warm yellow, white. Light effects suggesting warmth and positivity.
+
+Style: Modern social media aesthetic with friendly, approachable design. Clean vector-style graphics with subtle gradients.
+
+Orientation: Landscape (4:3 ratio)
+Style: Friendly, social, connected with warm interpersonal feeling

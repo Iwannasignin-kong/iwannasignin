@@ -1,0 +1,13 @@
+P1: Xiaohongshu cover image, 3:4 vertical ratio. Warm family scene with a smartphone showing a health recipe mini-app in the center. Soft pastel background with heart and cloud decorations. Large bold text in Chinese: 在外地工作，最怕的就是爸妈身体不舒服. Emotional, caring atmosphere. Warm color palette with cream and peach tones. Minimalist layout with focus on the emotional message.
+
+P2: Young person looking at phone with worried expression, representing the pain point of being unable to help parents from afar. Soft, sympathetic lighting. Thought bubble or text overlay showing concern about mother's sleep problems. Warm illustration style, emotive but not overly sad. Text: 电话里听说妈妈睡眠不好，却只能干着急. Balanced composition.
+
+P3: Smartphone screen showing symptom search feature of the health recipe mini-app. Search bar shows 失眠. Below, a list of recommended calming recipes appears. Character has a eureka moment of discovering the solution. Clean UI design, warm colors. Text: 偶然发现这个中医药食谱小程序，能按症状找食谱. Balanced layout showing discovery moment.
+
+P4: WeChat family group chat interface on phone screen. A recipe card for calming sleep syrup is being shared. One-click share button highlighted with sparkle effect. Chat messages show warmth between daughter and mother: 妈，这个安神糖水你试试 and 谢谢闺女. Warm, loving atmosphere. Text: 一键分享到家庭群，妈妈收到很开心. Balanced composition.
+
+P5: Cozy kitchen scene with mother and daughter cooking together. Both have happy expressions. The finished calming syrup in a bowl. Warm kitchen lighting, steam rising from the food. Mother looks relieved and well-rested. Domestic warmth, family bonding. Text: 周末回家一起做，妈妈说睡得比以前香了. Balanced layout showing positive outcome.
+
+P6: Clean feature showcase of the mini-app three core functions displayed as cards: 1) Symptom Search with magnifying glass icon 2) Seasonal Recommendations with calendar icon 3) Video Tutorial with play button. Each feature has brief description. Simple, modern UI design with warm color scheme. Text: 还能按节气推荐，现在全家都在用. Information-dense but clean layout. Notion-style minimalist approach.
+
+P7: Warm family photo scene - multi-generational family eating together at dining table. Everyone looks happy and healthy. Soft, warm lighting. Heart and warmth elements in background. Emotional, heartwarming conclusion. Inspirational message text: 别等父母生病才想起关心，现在就开始用起来吧. CTA-style design with emotional appeal. Sparse layout with powerful message.

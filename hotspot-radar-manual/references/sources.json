@@ -1,0 +1,126 @@
+{
+  "domains": {
+    "ai": {
+      "title": "AI 热点日报",
+      "summary_hint": "建议优先选\"官方发布解读 + 研究结论转实战\"的组合写法。",
+      "keywords": ["ai", "model", "agent", "llm", "benchmark", "release", "api", "paper"],
+      "feeds": [
+        "https://openai.com/news/rss.xml",
+        "https://blog.google/technology/ai/rss/",
+        "https://export.arxiv.org/rss/cs.AI",
+        "https://venturebeat.com/category/ai/feed/",
+        "https://www.technologyreview.com/feed/",
+        "https://deepmind.google/discover/blog/feed-basic/",
+        "https://blogs.nvidia.com/feed/",
+        "https://research.facebook.com/blog/feed/",
+        "https://hacks.mozilla.org/feed/",
+        "https://blog.google/outreach-initiatives/education/feed/"
+      ]
+    },
+    "robotics": {
+      "title": "机器人热点日报",
+      "summary_hint": "建议重点看硬件落地、控制算法与商业应用案例。",
+      "keywords": ["robot", "robotics", "automation", "control", "autonomous", "humanoid"],
+      "feeds": [
+        "https://spectrum.ieee.org/rss/robotics/fulltext",
+        "https://www.therobotreport.com/feed/",
+        "https://blog.bostondynamics.com/feed",
+        "https://www.automationworld.com/feed",
+        "https://www.roboticstomorrow.com/feed.aspx"
+      ]
+    },
+    "finance": {
+      "title": "金融科技热点日报",
+      "summary_hint": "建议优先筛选监管变化、支付创新和AI金融应用场景。",
+      "keywords": ["fintech", "finance", "bank", "payment", "risk", "compliance", "trading"],
+      "feeds": [
+        "https://www.ft.com/?format=rss",
+        "https://www.economist.com/finance-and-economics/rss.xml",
+        "https://www.coindesk.com/arc/outboundfeeds/rss/",
+        "https://techcrunch.com/category/fintech/feed/"
+      ]
+    },
+    "tech": {
+      "title": "科技综合热点日报",
+      "summary_hint": "建议关注大厂动态、行业趋势和消费电子产品发布。",
+      "keywords": ["tech", "technology", "launch", "release", "product", "apple", "google", "microsoft"],
+      "feeds": [
+        "https://www.theverge.com/rss/index.xml",
+        "https://techcrunch.com/feed/",
+        "https://arstechnica.com/feed/",
+        "https://www.wired.com/feed/rss",
+        "https://www.engadget.com/rss.xml",
+        "https://9to5mac.com/feed/",
+        "https://www.androidpolice.com/feed/"
+      ]
+    },
+    "coding": {
+      "title": "开发者热点日报",
+      "summary_hint": "建议关注新框架发布、编程语言更新和最佳实践。",
+      "keywords": ["code", "programming", "developer", "framework", "library", "release", "api"],
+      "feeds": [
+        "https://github.blog/feed/",
+        "https://stackoverflow.blog/feed/",
+        "https://dev.to/feed",
+        "https://hackernoon.com/feed",
+        "https://www.smashingmagazine.com/feed/",
+        "https://css-tricks.com/feed/"
+      ]
+    },
+    "startup": {
+      "title": "创业投资热点日报",
+      "summary_hint": "建议关注融资动态、独角兽公司和行业趋势分析。",
+      "keywords": ["startup", "funding", "venture", "capital", "ipo", "investment", "unicorn"],
+      "feeds": [
+        "https://techcrunch.com/feed/",
+        "https://venturebeat.com/feed/",
+        "https://news.ycombinator.com/rss",
+        "https://www.bloomberg.com/feed/news/technology.rss",
+        "https://www.wsj.com/xml/rss/3_7455.xml"
+      ]
+    },
+    "global": {
+      "title": "Global 综合热点",
+      "summary_hint": "建议关注跨领域趋势，结合热点话题进行延伸创作。",
+      "keywords": ["ai", "科技", "热点", "发布", "模型", "应用", "创新", "tech", "launch", "release", "startup", "breaking"],
+      "sources": [
+        {"type": "demo", "enabled": false},
+        {"type": "baidu_hotsearch", "enabled": true},
+        "https://techcrunch.com/feed/",
+        "https://www.theverge.com/rss/index.xml",
+        "https://arstechnica.com/feed/",
+        "https://www.wired.com/feed/rss",
+        "https://news.ycombinator.com/rss",
+        "https://www.technologyreview.com/feed/",
+        "https://venturebeat.com/feed/",
+        "https://www.engadget.com/rss.xml",
+        "https://9to5mac.com/feed/",
+        "https://www.androidpolice.com/feed/",
+        "https://hackernoon.com/feed",
+        "https://dev.to/feed",
+        "https://blog.google/technology/rss/"
+      ]
+    },
+    "all": {
+      "title": "全网热点日报",
+      "summary_hint": "全网综合热点，涵盖科技、AI、创业、金融、中文社交等多领域。建议优先关注跨行业趋势和大厂动态。",
+      "keywords": ["ai", "tech", "launch", "release", "startup", "breaking", "new", "announce", "model", "api", "funding", "app", "platform", "service"],
+      "sources": [
+        {"type": "tophub", "enabled": true},
+        {"type": "weibo_playwright", "enabled": true},
+        {"type": "xhs_playwright", "enabled": true},
+        {"type": "baidu_hotsearch", "enabled": true},
+        "https://techcrunch.com/feed/",
+        "https://www.theverge.com/rss/index.xml",
+        "https://arstechnica.com/feed/",
+        "https://www.wired.com/feed/rss",
+        "https://www.technologyreview.com/feed/",
+        "https://venturebeat.com/feed/"
+      ]
+    }
+  },
+  "dingtalk": {
+    "enabled": false,
+    "webhook_url_env": "DINGTALK_WEBHOOK_URL"
+  }
+}

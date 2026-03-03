@@ -1,0 +1,11 @@
+# Hotspot Radar - Python Dependencies
+
+# HTTP requests (for some advanced features)
+requests>=2.31.0
+
+# HTML parsing for Chinese social media sources
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Browser automation for Weibo/Xiaohongshu
+playwright>=1.40.0

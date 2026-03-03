@@ -1,0 +1,4 @@
+version: 1
+display_name: Hotspot Radar Manual
+short_description: One-click multi-source hotspot HTML brief for any domain.
+default_prompt: Generate a manual hotspot brief for my chosen domain using the local skill config and scripts.

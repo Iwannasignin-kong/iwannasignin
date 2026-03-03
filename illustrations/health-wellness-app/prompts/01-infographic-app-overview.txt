@@ -1,0 +1,13 @@
+Modern mobile app interface design showing a health and wellness mini program with three main features. Clean UI layout with:
+
+1. Top section: Search bar with magnifying glass icon, placeholder for symptom input
+2. Middle section: Three circular feature buttons arranged horizontally:
+   - Left button: Search icon with medical cross symbol
+   - Center button: Heart/hands icon for constitution-based recommendations
+   - Right button: Share/connect icon with three dots representing social sharing
+3. Bottom section: Simple card preview showing a recipe suggestion
+
+Color scheme: Warm, calming palette with soft greens, gentle oranges, and clean white backgrounds. Rounded corners, subtle shadows, minimalist icon design. Modern flat design style inspired by iOS/Android health apps. No text visible - purely visual icons and shapes.
+
+Orientation: Portrait (3:4 ratio)
+Style: Clean, modern, friendly UI design with warm colors

@@ -1,0 +1,14 @@
+Simple horizontal flowchart showing user journey in a health app:
+
+Step 1 (Left): Smartphone screen with search bar, user typing icon, magnifying glass
+Arrow pointing right →
+
+Step 2 (Center): Results screen showing three stacked cards with food/recipe icons, leaf symbols, checkmarks
+Arrow pointing right →
+
+Step 3 (Right): Featured recipe card with detailed food illustration, herbal elements (ginger, herbs), nutritional symbols
+
+Visual style: Clean infographic design with soft gradient backgrounds (light blue to white), rounded rectangles, simple icons. Arrows are sleek and modern. Color scheme: Teal, mint green, soft orange accents. No text - purely visual communication through icons, symbols, and layout.
+
+Orientation: Landscape (4:3 ratio)
+Style: Minimalist flowchart, professional infographic aesthetic

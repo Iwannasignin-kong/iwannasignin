@@ -1,0 +1,100 @@
+name: 每日热点日报推送
+
+# 触发条件
+on:
+  # 定时执行：每天 UTC 1:00 (北京时间 9:00)
+  schedule:
+    - cron: '0 1 * * *'
+
+  # 支持手动触发
+  workflow_dispatch:
+
+  # 可选：代码推送时也触发（用于测试）
+  # push:
+  #   branches: [ main, master ]
+
+# 环境变量
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  generate-and-push:
+    runs-on: ubuntu-latest
+
+    # 设置超时时间（防止任务卡住）
+    timeout-minutes: 30
+
+    steps:
+      # 1. 检出代码
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      # 2. 设置 Python 环境
+      - name: 设置 Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip' # 缓存 pip 依赖以加速构建
+
+      # 3. 安装系统依赖
+      - name: 安装系统依赖
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libnspr4 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libdbus-1-3 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2
+
+      # 4. 安装 Python 依赖
+      - name: 安装 Python 依赖
+        run: |
+          pip install --upgrade pip
+          pip install requests playwright
+
+      # 5. 安装 Playwright 浏览器
+      - name: 安装 Playwright 浏览器
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+      # 6. 生成热点日报并发送推送
+      - name: 生成并推送热点日报
+        env:
+          # 从 GitHub Secrets 中读取 Webhook URL
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+        run: |
+          cd hotspot-radar-manual
+          python scripts/generate_hotspots.py \
+            --domain all \
+            --top 50 \
+            --no-fallback \
+            --feishu
+
+      # 7. 上传生成的 HTML 文件（可选）
+      - name: 上传报告文件
+        uses: actions/upload-artifact@v4
+        if: always() # 即使前面的步骤失败也执行
+        with:
+          name: hotspot-report-${{ github.run_number }}
+          path: |
+            hotspot-radar-manual/output/*.html
+          retention-days: 30 # 保留 30 天
+
+      # 8. 发送失败通知（可选）
+      - name: 发送失败通知
+        if: failure()
+        run: |
+          echo "热点日报生成失败！请检查日志。"
+          # 这里可以添加额外的失败通知逻辑

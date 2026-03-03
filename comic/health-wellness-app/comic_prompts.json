@@ -1,0 +1,181 @@
+{
+  "comic_config": {
+    "style": "manga",
+    "art_style": "anime",
+    "tone": "neutral",
+    "layout": "webtoon",
+    "aspect_ratio": "3:4",
+    "language": "zh",
+    "character_style": "Doraemon manga characters"
+  },
+  "panels": [
+    {
+      "page": 1,
+      "panel": 1,
+      "filename": "page-1-panel-1.png",
+      "prompt": "Manga anime style illustration: Nobita (Doraemon character with glasses and yellow shirt) sitting up in bed, morning sunlight through window, dizziness spiral effects around head, confused expression with spinning spiral eyes, Japanese tatami bedroom, warm morning lighting, clean line art, expressive manga emotion, 3:4 portrait ratio, high quality anime art",
+      "negative_prompt": "blurry, low quality, distorted, western cartoon style, realistic photo"
+    },
+    {
+      "page": 1,
+      "panel": 2,
+      "filename": "page-1-panel-2.png",
+      "prompt": "Manga anime style: Nobita looking at bathroom mirror, pale complexion and tired face, large thought bubble with question mark and blood pressure medical symbol, worried expression with sweat drop, morning light, contemplative vertical lines, Doraemon manga character style, muted cool colors showing discomfort, 3:4 portrait, anime art",
+      "negative_prompt": "bright colors, cheerful, healthy appearance, blurry, low quality"
+    },
+    {
+      "page": 1,
+      "panel": 3,
+      "filename": "page-1-panel-3.png",
+      "prompt": "Manga anime action scene: Doraemon (blue robot cat with red collar and bell) dramatically popping out of desk drawer, burst motion effects, Nobita pointing at head with intense dizziness spirals, dynamic speed lines, DOKAN sound effect text, energetic entrance, classic Doraemon manga style, high energy action pose, 3:4 portrait",
+      "negative_prompt": "static, boring, low energy, blurry, poor quality"
+    },
+    {
+      "page": 1,
+      "panel": 4,
+      "filename": "page-1-panel-4.png",
+      "prompt": "Manga anime scene: Nobita talking worriedly to Doraemon, hand gestures explaining, Doraemon with hand on chin thinking then lightbulb idea moment, bright lightbulb glow above head, bedroom setting, expression changing from confusion to enlightenment, Doraemon manga character style, warm friendly interaction, 3:4 portrait",
+      "negative_prompt": "angry, sad, dark, scary, blurry"
+    },
+    {
+      "page": 1,
+      "panel": 5,
+      "filename": "page-1-panel-5.png",
+      "prompt": "Manga anime close-up: Doraemon's white belly with 4D pocket, hand reaching inside pocket, magical golden sparkles and glow emanating from pocket, dimensional swirling space visible inside, focused expression, magical realism effect, small detail panel, glowing mystical effect, 3:4 portrait",
+      "negative_prompt": "dark, scary, no glow, blurry, low quality"
+    },
+    {
+      "page": 1,
+      "panel": 6,
+      "filename": "page-1-panel-6.png",
+      "prompt": "Manga anime dramatic reveal: Doraemon proudly holding up glowing futuristic smartphone gadget, screen with soup bowl and magnifying glass app icon, Nobita amazed with sparkling star eyes, dramatic spotlight on device, FLASH shiny effects, high-tech gadget presentation, exciting discovery moment, warm orange glow, 3:4 portrait",
+      "negative_prompt": "boring, plain, no excitement, dull lighting"
+    },
+    {
+      "page": 2,
+      "panel": 1,
+      "filename": "page-2-panel-1.png",
+      "prompt": "Manga anime scene: Doraemon showing smartphone screen to Nobita, clean search interface with warm orange theme, Nobita leaning close with sparkling amazed eyes and excited expression, friendly helpful atmosphere, warm inviting glow from screen, Doraemon manga characters, educational moment, 3:4 portrait",
+      "negative_prompt": "scary, dark, unfriendly, blurry"
+    },
+    {
+      "page": 2,
+      "panel": 2,
+      "filename": "page-2-panel-2.png",
+      "prompt": "Manga anime UI design close-up: Beautiful smartphone app interface, modern clean design, search bar with placeholder text 'enter symptoms or ingredients', cute magnifying glass combined with soup bowl icon, hashtag tags #blood pressure regulation #health soups, warm orange color scheme, rounded card layout, friendly accessible design, 3:4 portrait",
+      "negative_prompt": "cluttered, ugly UI, cold colors, messy design"
+    },
+    {
+      "page": 2,
+      "panel": 3,
+      "filename": "page-2-panel-3.png",
+      "prompt": "Manga anime scene: Nobita typing on smartphone screen, text 'dizziness blood pressure' in search bar, magnifying glass scanning animation effect with light beams, digital sparkles and motion lines, focused determined expression, modern tech interaction, active searching scene, 3:4 portrait",
+      "negative_prompt": "boring, static, no action, blurry"
+    },
+    {
+      "page": 2,
+      "panel": 4,
+      "filename": "page-2-panel-4.png",
+      "prompt": "Manga anime excitement: Phone screen showing search results, beautiful recipe card for 'Gastrodia Fish Head Soup' with cute soup bowl illustration, tags #stabilize blood pressure #brain nourishing, play button for video tutorial, Nobita with star sparkling eyes and big excited smile, discovery moment, warm colors, 3:4 portrait",
+      "negative_prompt": "boring, dull, no excitement, plain design"
+    },
+    {
+      "page": 2,
+      "panel": 5,
+      "filename": "page-2-panel-5.png",
+      "prompt": "Manga anime high energy: Nobita jumping with arms up super excited, Doraemon pointing at screen with happy proud expression, both characters celebrating, dynamic speed lines radiating, sparkle stars everywhere, exclamation marks, enthusiastic interaction, pure joy and discovery, Doraemon manga style, 3:4 portrait",
+      "negative_prompt": "sad, bored, static, no energy"
+    },
+    {
+      "page": 2,
+      "panel": 6,
+      "filename": "page-2-panel-6.png",
+      "prompt": "Manga anime UI: Phone screen showing video player, cute cartoon chef character in apron and hat cooking soup, numbered step indicators 1️⃣ ingredient preparation 2️⃣ simmering 3️⃣ complete, friendly instructional style, warm video playback glow, clear educational design, appetizing food illustration, 3:4 portrait",
+      "negative_prompt": "confusing, unclear, poor instructional design"
+    },
+    {
+      "page": 3,
+      "panel": 1,
+      "filename": "page-3-panel-1.png",
+      "prompt": "Manga anime kitchen scene: Nobita wearing cute apron standing at kitchen counter, ingredients arranged neatly gastrodia herb fish head ginger, smartphone propped up playing video, confident ready to cook pose, bright clean organized kitchen, warm lighting, cooking preparation scene, 3:4 portrait",
+      "negative_prompt": "messy, dirty kitchen, dark, unappetizing"
+    },
+    {
+      "page": 3,
+      "panel": 2,
+      "filename": "page-3-panel-2.png",
+      "prompt": "Manga anime cooking action: Nobita at sink washing fish head, hands in water, water splash effects and droplets, focused careful expression, running tap water, sparkly clean effect, step 1 cleaning ingredients, dynamic cooking action, fresh water effects, 3:4 portrait",
+      "negative_prompt": "dry, no water effects, static pose"
+    },
+    {
+      "page": 3,
+      "panel": 3,
+      "filename": "page-3-panel-3.png",
+      "prompt": "Manga anime cooking with metaphor: Nobita carefully placing ingredients into soup pot, thought bubble showing golden medicinal essence spreading with glowing particles, healing energy visualization, warm golden light emanating from herbs, nurturing cooking process, health recovery metaphor, magical realism, 3:4 portrait",
+      "negative_prompt": "dark, no glow, cold colors, plain cooking"
+    },
+    {
+      "page": 3,
+      "panel": 4,
+      "filename": "page-3-panel-4.png",
+      "prompt": "Manga anime time passage: Soup pot simmering on stove with glass lid, delicious aroma steam rising in swirling spirals, wall clock showing time passing from 1 hour to 2 hours, rich broth visible, warm comforting kitchen atmosphere, patient waiting, cozy cooking scene, golden warm colors, 3:4 portrait",
+      "negative_prompt": "cold, no steam, unappetizing, rushed"
+    },
+    {
+      "page": 3,
+      "panel": 5,
+      "filename": "page-3-panel-5.png",
+      "prompt": "Manga anime achievement: Large panel Nobita proudly holding bowl of hot steaming fish head soup with both hands, beautiful clear broth with gastrodia slices and fish visible, satisfied expression with rosy cheeks showing health recovery, warm light halo background, appetizing presentation, healing and success, 3:4 portrait",
+      "negative_prompt": "unappetizing, murky soup, sad expression"
+    },
+    {
+      "page": 3,
+      "panel": 6,
+      "filename": "page-3-panel-6.png",
+      "prompt": "Manga anime healing moment: Nobita sipping soup from spoon with eyes closed in enjoyment, thought bubble showing orange warm healing energy flowing from head down through entire body, comfort and nourishment visualization, peaceful contented expression, health recovery metaphor, golden warmth spreading, 3:4 portrait",
+      "negative_prompt": "cold, no healing effect, uncomfortable expression"
+    },
+    {
+      "page": 4,
+      "panel": 1,
+      "filename": "page-4-panel-1.png",
+      "prompt": "Manga anime outdoor scene: Nobita looking healthy and energetic walking with rosy cheeks and bright eyes, no more dizziness, walking alongside Shizuka, outdoor path with trees and blue sky, Shizuka with caring friendly expression noticing his improvement, bright cheerful day, friendship and health, 3:4 portrait",
+      "negative_prompt": "sick, pale, sad, dark weather"
+    },
+    {
+      "page": 4,
+      "panel": 2,
+      "filename": "page-4-panel-2.png",
+      "prompt": "Manga anime sharing moment: Nobita excitedly holding out smartphone showing to Shizuka, proud enthusiastic expression, Shizuka leaning in with interested curious look, friendly interaction, outdoor path simplified background, sharing discovery moment, social connection, 3:4 portrait",
+      "negative_prompt": "bored, uninterested, no interaction"
+    },
+    {
+      "page": 4,
+      "panel": 3,
+      "filename": "page-4-panel-3.png",
+      "prompt": "Manga anime UI close-up: Smartphone screen showing app features, clean modern interface with three sections: body constitution recommendation with person icon, seasonal health with calendar icon, family sharing with group icon, warm orange theme, attractive accessible design, Shizuka looking impressed in background, 3:4 portrait",
+      "negative_prompt": "ugly UI, cluttered, confusing design"
+    },
+    {
+      "page": 4,
+      "panel": 4,
+      "filename": "page-4-panel-4.png",
+      "prompt": "Manga anime sharing action: Phone screen showing share menu with 'share to family group' option selected, Nobita's finger tapping share button, Shizuka nodding with happy supportive smile, caring and sharing concept, family connection theme, warm friendly atmosphere, 3:4 portrait",
+      "negative_prompt": "selfish, unfriendly, cold interaction"
+    },
+    {
+      "page": 4,
+      "panel": 5,
+      "filename": "page-4-panel-5.png",
+      "prompt": "Manga anime heartwarming conclusion: Large panel family gathering, Nobita Doraemon and Shizuka sitting around table with various health soup bowls, all three smiling happy and content, warm golden lighting, cozy intimate atmosphere, success and satisfaction, health and happiness achievement, beautiful warm color palette, 3:4 portrait",
+      "negative_prompt": "sad, lonely, cold, dark"
+    },
+    {
+      "page": 4,
+      "panel": 6,
+      "filename": "page-4-panel-6.png",
+      "prompt": "Manga anime triumphant ending: Nobita giving big thumbs up with confident smile, Doraemon with friendly happy smile, Shizuka cheerful and sweet, all three together in triumphant group pose, sparkle stars and happy effects, classic manga chapter ending style, optimistic future, to be continued feeling, 3:4 portrait",
+      "negative_prompt": "sad ending, defeat, dark mood"
+    }
+  ]
+}

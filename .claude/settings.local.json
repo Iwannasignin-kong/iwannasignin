@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(mkdir:*)",
+      "Bash(head:*)",
+      "Bash(cd:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(git clone:*)",
+      "Bash(npx:*)",
+      "Bash(cd C:\\\\Users\\\\10360\\\\Desktop\\\\111\\\\hotspot-radar-manual:*)",
+      "Bash(pip install:*)",
+      "Bash(playwright install:*)",
+      "Bash(true:*)",
+      "Bash(start:*)",
+      "Bash(tail:*)",
+      "Bash(cd \"C:/Users/10360/Desktop/111/hotspot-radar-manual\" && python -c \"\nfrom playwright.sync_api import sync_playwright\nimport json\n\nwith open\\('data/tophub_cookies.json', 'r', encoding='utf-8'\\) as f:\n    cookies = json.load\\(f\\)\n\nwith sync_playwright\\(\\) as p:\n    chrome_path = r'C:\\\\Users\\\\10360\\\\AppData\\\\Local\\\\ms-playwright\\\\chrome-win\\\\chrome.exe'\n    browser = p.chromium.launch\\(headless=True, executable_path=chrome_path\\)\n    context = browser.new_context\\(viewport={'width': 1920, 'height': 1080}\\)\n    context.add_cookies\\(cookies\\)\n    page = context.new_page\\(\\)\n    page.goto\\('https://tophub.today/hot', timeout=30000\\)\n    \n    import time\n    time.sleep\\(5\\)\n    \n    # Save to file\n    with open\\('tophub_test.html', 'w', encoding='utf-8'\\) as f:\n        f.write\\(page.content\\(\\)\\)\n    \n    print\\('Saved to tophub_test.html'\\)\n    browser.close\\(\\)\n\" 2>&1)",
+      "Bash(cd \"C:/Users/10360/Desktop/111/hotspot-radar-manual\" && python scripts/login_tophub.py 2>&1)",
+      "Bash(cd \"C:/Users/10360/Desktop/111/hotspot-radar-manual\" && python -c \"\nfrom playwright.sync_api import sync_playwright\nimport json\nimport time\n\nwith open\\('data/tophub_cookies.json', 'r', encoding='utf-8'\\) as f:\n    cookies = json.load\\(f\\)\n\nprint\\('正在打开浏览器...'\\)\n\nwith sync_playwright\\(\\) as p:\n    chrome_path = r'C:\\\\Users\\\\10360\\\\AppData\\\\Local\\\\ms-playwright\\\\chrome-win\\\\chrome.exe'\n    browser = p.chromium.launch\\(headless=False, executable_path=chrome_path\\)\n    context = browser.new_context\\(viewport={'width': 1920, 'height': 1080}\\)\n    context.add_cookies\\(cookies\\)\n    page = context.new_page\\(\\)\n    page.goto\\('https://tophub.today/hot', timeout=30000\\)\n    \n    print\\('浏览器已打开，请查看页面状态'\\)\n    print\\('等待 30 秒...'\\)\n    time.sleep\\(30\\)\n    \n    content = page.content\\(\\)\n    \n    if '安全验证' in content:\n        print\\('页面显示验证码'\\)\n    elif 'child-item' in content:\n        print\\('页面加载成功，有热点列表'\\)\n    \n    browser.close\\(\\)\n\" 2>&1)",
+      "Bash(rm:*)",
+      "Bash(python:*)",
+      "Bash(cat:*)",
+      "Bash(cd C:\\\\Users\\\\10360\\\\Desktop\\\\111:*)"
+    ]
+  }
+}

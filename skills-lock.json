@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "baoyu-image-gen": {
+      "source": "jimliu/baoyu-skills",
+      "sourceType": "github",
+      "computedHash": "8ae895bb0f607c5156acf18c029dcc6d598b15fd99f76cb4499d7f4f63a6e591"
+    },
+    "baoyu-xhs-images": {
+      "source": "jimliu/baoyu-skills",
+      "sourceType": "github",
+      "computedHash": "b62dd589bd935cf885fb57e72cbcec382e32def35b93c78029dfb881b5250dfb"
+    }
+  }
+}

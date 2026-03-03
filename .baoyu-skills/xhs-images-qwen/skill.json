@@ -1,0 +1,27 @@
+{
+  "name": "xhs-images-qwen",
+  "description": "小红书信息图生成器 - 使用阿里云 DashScope API。支持 Style × Layout 二维系统，9种风格 × 6种布局。",
+  "author": "Uncle-L",
+  "version": "1.0",
+  "parameters": {
+    "content": {
+      "type": "string",
+      "description": "要生成图文的内容（支持文本或 Markdown 文件路径）"
+    },
+    "style": {
+      "type": "string",
+      "description": "视觉风格: cute|fresh|warm|bold|minimal|retro|pop|notion|chalkboard",
+      "default": "cute"
+    },
+    "layout": {
+      "type": "string",
+      "description": "信息密度布局: sparse|balanced|dense|list|comparison|flow",
+      "default": "balanced"
+    },
+    "count": {
+      "type": "integer",
+      "description": "生成图片数量 (1-10)",
+      "default": 6
+    }
+  }
+}
