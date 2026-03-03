@@ -1369,7 +1369,9 @@ class FeishuNotifier:
 🔥 Top 5 热点：
 {items_text}
 
-📌 查看完整报告
+📌 查看完整 HTML 报告：
+https://iwannasignin-kong.github.io/iwannasignin/
+
 数据源: {source_count} 个 | 异常: {error_count} 个
 """
 

@@ -1,0 +1,93 @@
+{
+  "image": "04-content-benefits.png",
+  "position": "content",
+  "layout": "dense",
+  "visual_notes": "2x2 网格布局，展示四大优点。每个象限有不同颜色的图标：蓝色水滴、白色云朵、粉色花朵、金币爱心。",
+  "text_elements": [
+    {
+      "id": "title",
+      "content": "爱它的4个理由",
+      "type": "heading",
+      "position": {
+        "x": "50%",
+        "y": "8%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "xlarge",
+        "font_weight": "bold",
+        "color": "#8B4513",
+        "background": "none",
+        "decoration": "underline"
+      }
+    },
+    {
+      "id": "benefit1",
+      "content": "💧 保湿力超强，一整天都不干",
+      "type": "bullet",
+      "position": {
+        "x": "50%",
+        "y": "30%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "medium",
+        "font_weight": "normal",
+        "color": "#4A90A4",
+        "background": "none",
+        "decoration": "none"
+      }
+    },
+    {
+      "id": "benefit2",
+      "content": "☁️ 质地清爽，完全不油腻",
+      "type": "bullet",
+      "position": {
+        "x": "50%",
+        "y": "50%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "medium",
+        "font_weight": "normal",
+        "color": "#87CEEB",
+        "background": "none",
+        "decoration": "none"
+      }
+    },
+    {
+      "id": "benefit3",
+      "content": "🌸 温和不刺激，敏感肌可用",
+      "type": "bullet",
+      "position": {
+        "x": "50%",
+        "y": "70%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "medium",
+        "font_weight": "normal",
+        "color": "#FFB6C1",
+        "background": "none",
+        "decoration": "none"
+      }
+    },
+    {
+      "id": "benefit4",
+      "content": "💰 价格亲民，性价比超高",
+      "type": "bullet",
+      "position": {
+        "x": "50%",
+        "y": "90%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "medium",
+        "font_weight": "bold",
+        "color": "#DAA520",
+        "background": "highlight",
+        "decoration": "none"
+      }
+    }
+  ]
+}

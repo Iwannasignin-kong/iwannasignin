@@ -1,0 +1,59 @@
+{
+  "image": "01-cover-dry-skin-problem.png",
+  "position": "cover",
+  "layout": "sparse",
+  "visual_notes": "冬日寒风背景，干裂的脸部特写（插画风格），温暖的色彩点缀给人希望感，中心留出大标题空间。冷色蓝与暖色桃粉渐变对比。",
+  "text_elements": [
+    {
+      "id": "title",
+      "content": "入冬后脸干裂了",
+      "type": "heading",
+      "position": {
+        "x": "50%",
+        "y": "32%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "xlarge",
+        "font_weight": "bold",
+        "color": "#8B4513",
+        "background": "highlight",
+        "decoration": "brackets"
+      }
+    },
+    {
+      "id": "subtitle",
+      "content": "试了5款面霜终于救回来了",
+      "type": "subheading",
+      "position": {
+        "x": "50%",
+        "y": "50%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "large",
+        "font_weight": "normal",
+        "color": "#A0522D",
+        "background": "none",
+        "decoration": "underline"
+      }
+    },
+    {
+      "id": "tagline",
+      "content": "真实测评",
+      "type": "label",
+      "position": {
+        "x": "50%",
+        "y": "62%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "small",
+        "font_weight": "normal",
+        "color": "#CD853F",
+        "background": "solid",
+        "decoration": "rounded"
+      }
+    }
+  ]
+}

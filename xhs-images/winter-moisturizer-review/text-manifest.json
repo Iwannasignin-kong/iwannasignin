@@ -1,0 +1,224 @@
+{
+  "series": {
+    "topic": "冬季保湿面霜测评",
+    "style": "warm",
+    "total_images": 5,
+    "generated_at": "2026-03-03T11:30:00+08:00",
+    "aspect_ratio": "3:4",
+    "mode": "image-only"
+  },
+  "images": [
+    {
+      "file": "01-cover-dry-skin-problem.png",
+      "position": "cover",
+      "layout": "sparse",
+      "status": "generated",
+      "text_elements": [
+        {
+          "id": "title",
+          "content": "入冬后脸干裂了",
+          "type": "heading",
+          "position": {"x": "50%", "y": "32%", "align": "center"},
+          "style": {
+            "font_size": "xlarge",
+            "font_weight": "bold",
+            "color": "#8B4513",
+            "background": "highlight",
+            "decoration": "brackets"
+          }
+        },
+        {
+          "id": "subtitle",
+          "content": "试了5款面霜终于救回来了",
+          "type": "subheading",
+          "position": {"x": "50%", "y": "50%", "align": "center"},
+          "style": {
+            "font_size": "large",
+            "font_weight": "normal",
+            "color": "#A0522D",
+            "background": "none",
+            "decoration": "underline"
+          }
+        },
+        {
+          "id": "tagline",
+          "content": "真实测评",
+          "type": "label",
+          "position": {"x": "50%", "y": "62%", "align": "center"},
+          "style": {
+            "font_size": "small",
+            "font_weight": "normal",
+            "color": "#CD853F",
+            "background": "solid",
+            "decoration": "rounded"
+          }
+        }
+      ]
+    },
+    {
+      "file": "02-content-review-journey.png",
+      "position": "content",
+      "layout": "list",
+      "status": "generated",
+      "text_elements": [
+        {
+          "id": "title",
+          "content": "我的踩雷日记",
+          "type": "heading",
+          "position": {"x": "50%", "y": "12%", "align": "center"},
+          "style": {"font_size": "xlarge", "font_weight": "bold", "color": "#8B4513"}
+        },
+        {
+          "id": "item1",
+          "content": "❌ 玻尿酸面霜：保湿一般，香味太浓",
+          "type": "bullet",
+          "position": {"x": "18%", "y": "28%", "align": "left"},
+          "style": {"font_size": "medium", "color": "#666666"}
+        },
+        {
+          "id": "item3",
+          "content": "✨ 角鲨烷面霜：我的本命面霜！",
+          "type": "bullet",
+          "position": {"x": "18%", "y": "58%", "align": "left"},
+          "style": {"font_size": "medium", "font_weight": "bold", "color": "#CD853F", "background": "highlight"}
+        },
+        {
+          "id": "item4",
+          "content": "✅ 胶原蛋白面霜：贵，但有效",
+          "type": "bullet",
+          "position": {"x": "18%", "y": "73%", "align": "left"},
+          "style": {"font_size": "medium", "color": "#666666"}
+        }
+      ]
+    },
+    {
+      "file": "03-content-holy-grail.png",
+      "position": "content",
+      "layout": "balanced",
+      "status": "generated",
+      "text_elements": [
+        {
+          "id": "title",
+          "content": "终于找到了！",
+          "type": "heading",
+          "position": {"x": "50%", "y": "15%", "align": "center"},
+          "style": {"font_size": "xlarge", "font_weight": "bold", "color": "#CD853F", "decoration": "star"}
+        },
+        {
+          "id": "product_name",
+          "content": "角鲨烷面霜",
+          "type": "subheading",
+          "position": {"x": "50%", "y": "75%", "align": "center"},
+          "style": {"font_size": "large", "font_weight": "bold", "color": "#8B4513", "background": "solid"}
+        },
+        {
+          "id": "tag",
+          "content": "✨ 干皮救星",
+          "type": "label",
+          "position": {"x": "50%", "y": "85%", "align": "center"},
+          "style": {"font_size": "medium", "color": "#FFFFFF", "background": "solid"}
+        }
+      ]
+    },
+    {
+      "file": "04-content-benefits.png",
+      "position": "content",
+      "layout": "dense",
+      "status": "generated",
+      "text_elements": [
+        {
+          "id": "title",
+          "content": "爱它的4个理由",
+          "type": "heading",
+          "position": {"x": "50%", "y": "8%", "align": "center"},
+          "style": {"font_size": "xlarge", "font_weight": "bold", "color": "#8B4513"}
+        },
+        {
+          "id": "benefit1",
+          "content": "💧 保湿力超强，一整天都不干",
+          "type": "bullet",
+          "position": {"x": "50%", "y": "30%", "align": "center"},
+          "style": {"font_size": "medium", "color": "#4A90A4"}
+        },
+        {
+          "id": "benefit2",
+          "content": "☁️ 质地清爽，完全不油腻",
+          "type": "bullet",
+          "position": {"x": "50%", "y": "50%", "align": "center"},
+          "style": {"font_size": "medium", "color": "#87CEEB"}
+        },
+        {
+          "id": "benefit3",
+          "content": "🌸 温和不刺激，敏感肌可用",
+          "type": "bullet",
+          "position": {"x": "50%", "y": "70%", "align": "center"},
+          "style": {"font_size": "medium", "color": "#FFB6C1"}
+        },
+        {
+          "id": "benefit4",
+          "content": "💰 价格亲民，性价比超高",
+          "type": "bullet",
+          "position": {"x": "50%", "y": "90%", "align": "center"},
+          "style": {"font_size": "medium", "font_weight": "bold", "color": "#DAA520", "background": "highlight"}
+        }
+      ]
+    },
+    {
+      "file": "05-ending-how-to-use.png",
+      "position": "ending",
+      "layout": "balanced",
+      "status": "pending",
+      "text_elements": [
+        {
+          "id": "title",
+          "content": "正确使用方法",
+          "type": "heading",
+          "position": {"x": "50%", "y": "8%", "align": "center"},
+          "style": {"font_size": "large", "font_weight": "bold", "color": "#8B4513"}
+        },
+        {
+          "id": "step1",
+          "content": "1. 洁面后取黄豆大小",
+          "type": "bullet",
+          "position": {"x": "20%", "y": "28%", "align": "left"},
+          "style": {"font_size": "medium", "color": "#666666", "decoration": "number-circle"}
+        },
+        {
+          "id": "cta1",
+          "content": "收藏备用",
+          "type": "cta",
+          "position": {"x": "30%", "y": "78%", "align": "center"},
+          "style": {"font_size": "medium", "font_weight": "bold", "color": "#FFFFFF", "background": "solid"}
+        },
+        {
+          "id": "interaction",
+          "content": "你的本命面霜是哪款？评论区见",
+          "type": "caption",
+          "position": {"x": "50%", "y": "92%", "align": "center"},
+          "style": {"font_size": "small", "color": "#999999"}
+        }
+      ]
+    }
+  ],
+  "style_guide": {
+    "fonts": {
+      "heading": "Noto Sans SC, Heiti SC, sans-serif",
+      "body": "Noto Sans SC, PingFang SC, sans-serif"
+    },
+    "colors": {
+      "primary": "#8B4513",
+      "secondary": "#A0522D",
+      "accent": "#CD853F",
+      "highlight": "#F9E79F",
+      "background": "#FFF8F0"
+    },
+    "decorations": {
+      "brackets": "【 】",
+      "highlight": "黄色背景块",
+      "underline": "下划线",
+      "number-circle": "数字圆圈",
+      "star": "⭐",
+      "rounded-rectangle": "圆角矩形按钮"
+    }
+  }
+}

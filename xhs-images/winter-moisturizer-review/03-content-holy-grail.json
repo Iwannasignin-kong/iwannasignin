@@ -1,0 +1,59 @@
+{
+  "image": "03-content-holy-grail.png",
+  "position": "content",
+  "layout": "balanced",
+  "visual_notes": "本命面霜登场！产品居中展示，周围有金色光晕和爱心、星星装饰。温暖发光效果，给人特殊感和期待感。",
+  "text_elements": [
+    {
+      "id": "title",
+      "content": "终于找到了！",
+      "type": "heading",
+      "position": {
+        "x": "50%",
+        "y": "15%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "xlarge",
+        "font_weight": "bold",
+        "color": "#CD853F",
+        "background": "none",
+        "decoration": "star"
+      }
+    },
+    {
+      "id": "product_name",
+      "content": "角鲨烷面霜",
+      "type": "subheading",
+      "position": {
+        "x": "50%",
+        "y": "75%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "large",
+        "font_weight": "bold",
+        "color": "#8B4513",
+        "background": "solid",
+        "decoration": "rounded"
+      }
+    },
+    {
+      "id": "tag",
+      "content": "✨ 干皮救星",
+      "type": "label",
+      "position": {
+        "x": "50%",
+        "y": "85%",
+        "align": "center"
+      },
+      "style": {
+        "font_size": "medium",
+        "font_weight": "normal",
+        "color": "#FFFFFF",
+        "background": "solid",
+        "decoration": "pill"
+      }
+    }
+  ]
+}
