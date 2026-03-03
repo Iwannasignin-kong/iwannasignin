@@ -1422,7 +1422,23 @@ https://iwannasignin-kong.github.io/iwannasignin/
 
 
 class FeishuCatNotifier(FeishuNotifier):
-    """Feishu webhook notification sender with cute catgirl style (猫娘版) 喵~"""
+    """Feishu webhook notification sender with cute catgirl style (猫娘版) 喵~
+
+    Supports multiple catgirl styles:
+    - default: 温柔甜美的标准猫娘
+    - playful: 调皮撒娇的猫娘
+    - lazy: 慵懒随意的猫娘
+    - cool: 高冷优雅的猫娘
+    """
+
+    def __init__(self, webhook_url: Optional[str] = None, style: str = "default"):
+        self.webhook_url = webhook_url or os.getenv("FEISHU_WEBHOOK_URL")
+        self.style = style
+        if not self.webhook_url:
+            raise ValueError(
+                "Feishu webhook URL not set. "
+                "Set FEISHU_WEBHOOK_URL environment variable or pass webhook_url."
+            )
 
     def send_hotspot_summary(
         self,
@@ -1440,7 +1456,124 @@ class FeishuCatNotifier(FeishuNotifier):
             for i, it in enumerate(top_items)
         ])
 
-        message = f"""✨ **{title}** ✨
+        # Get style-specific message template
+        message = self._get_style_message(title, summary, items_text, source_count)
+
+        # Send catgirl message directly
+        payload = {
+            "msg_type": "text",
+            "content": {
+                "text": message
+            }
+        }
+
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                if HAS_REQUESTS:
+                    response = requests.post(
+                        self.webhook_url,
+                        json=payload,
+                        headers={"Content-Type": "application/json"},
+                        timeout=10
+                    )
+                    result = response.json()
+                    if result.get("StatusCode") == 0 or result.get("code") == 0:
+                        return True
+                    else:
+                        print(f"Feishu API error: {result}")
+                else:
+                    import urllib.request
+                    data = json.dumps(payload).encode('utf-8')
+                    req = urllib.request.Request(
+                        self.webhook_url,
+                        data=data,
+                        headers={'Content-Type': 'application/json'}
+                    )
+                    with urllib.request.urlopen(req, timeout=10) as resp:
+                        result = json.loads(resp.read().decode('utf-8'))
+                        if result.get("StatusCode") == 0 or result.get("code") == 0:
+                            return True
+
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    time.sleep(wait_time)
+                else:
+                    print(f"Feishu notification failed: {e}")
+                    return False
+
+        return False
+
+    def _get_style_message(self, title: str, summary: str, items_text: str, source_count: int) -> str:
+        """Get message template based on catgirl style 喵"""
+
+        if self.style == "playful":
+            return f"""🎀 **{title}** 🎀
+{dt.datetime.now().strftime('%Y-%m-%d')} 喵呜~
+
+📊 {summary}
+
+🔥 今日热搜榜喵：
+{items_text}
+
+📌 HTML 完整版看这里：
+https://iwannasignin-kong.github.io/iwannasignin/
+
+🌸 来源：{source_count} 个平台
+主人快来看看嘛~ 喵呜~ 💖
+"""
+
+        elif self.style == "lazy":
+            return f"""😴 **{title}** 😴
+{dt.datetime.now().strftime('%Y-%m-%d')} 喵...
+
+📊 {summary}
+
+🔥 热搜榜来了喵...
+{items_text}
+
+📌 HTML 版本：
+https://iwannasignin-kong.github.io/iwannasignin/
+
+🌟 {source_count} 个平台的数据...
+主人想看就看吧... 喵 zZZ...
+"""
+
+        elif self.style == "cool":
+            return f"""❄️ **{title}** ❄️
+{dt.datetime.now().strftime('%Y-%m-%d')} 喵。
+
+📊 {summary}
+
+🔥 本日热点：
+{items_text}
+
+📌 完整报告：
+https://iwannasignin-kong.github.io/iwannasignin/
+
+🌸 数据源自 {source_count} 个平台
+...主人请便。 喵
+"""
+
+        elif self.style == "cute":
+            return f"""🌸 **{title}** 🌸
+{dt.datetime.now().strftime('%Y-%m-%d')} 喵唔~ 💕
+
+📊 {summary}
+
+🔥 好多热搜呐主人~ 喵
+{items_text}
+
+📌 HTML 版在这里哦：
+https://iwannasignin-kong.github.io/iwannasignin/
+
+🎀 {source_count} 个平台的数据
+主人会喜欢哒对吧~？💕 喵呜~ 🎀
+"""
+
+        else:  # default style
+            return f"""✨ **{title}** ✨
 {dt.datetime.now().strftime('%Y-%m-%d')} 喵呜~
 
 📊 {summary} 呢~
@@ -2084,6 +2217,12 @@ def main():
         help="Use cute catgirl style for Feishu message (喵~)"
     )
     parser.add_argument(
+        "--cat-style",
+        choices=["default", "playful", "lazy", "cool", "cute"],
+        default="default",
+        help="Catgirl style variant (default|playful|lazy|cool|cute)"
+    )
+    parser.add_argument(
         "--clear-cookies",
         action="store_true",
         help="Clear all saved cookies before fetching (force refresh)"
@@ -2153,8 +2292,8 @@ def main():
 
             # Choose notifier style based on --cat flag
             if args.cat:
-                notifier = FeishuCatNotifier()
-                print("使用猫娘风格推送 喵~")
+                notifier = FeishuCatNotifier(style=args.cat_style)
+                print(f"使用猫娘风格推送 [{args.cat_style}] 喵~")
             else:
                 notifier = FeishuNotifier()
 
