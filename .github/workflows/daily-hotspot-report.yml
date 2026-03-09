@@ -46,18 +46,16 @@ jobs:
           pip install requests
 
       # 4. 生成热点日报并发送推送
-      - name: 生成并推送热点日报（飞书 + 钉钉）
+      - name: 生成并推送热点日报（飞书）
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
         run: |
           cd hotspot-radar-manual
           python scripts/generate_hotspots.py \
             --domain all \
             --top 50 \
             --no-fallback \
-            --feishu \
-            --dingtalk
+            --feishu
 
       # 5. 上传生成的 HTML 文件
       - name: 上传报告文件
