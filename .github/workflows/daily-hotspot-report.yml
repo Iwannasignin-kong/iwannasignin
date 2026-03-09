@@ -9,8 +9,20 @@ on:
   # 支持手动触发
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   generate-and-push:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     # 设置超时时间
@@ -53,3 +65,20 @@ jobs:
           name: hotspot-report-${{ github.run_number }}
           path: hotspot-radar-manual/output/*.html
           retention-days: 30
+
+      - name: 同步最新 HTML 到 Pages 目录
+        if: always()
+        run: |
+          mkdir -p docs
+          cp hotspot-radar-manual/output/hotspots-all-latest.html docs/index.html
+
+      - name: 上传到 GitHub Pages
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: 部署到 GitHub Pages
+        if: always()
+        id: deployment
+        uses: actions/deploy-pages@v4
